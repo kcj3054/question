@@ -12,7 +12,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private static UserDaoService service;
+    private UserDaoService service;
 
 
     @GetMapping("/user")

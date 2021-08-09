@@ -10,7 +10,7 @@ import java.util.Date;
 
 //@Entity 하면 자동으로 이것을 db 테이블로 만들어준다
 @Entity
-public class User {
+public class UserDao {
 
     @Id
     @GeneratedValue

@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 
-import com.example.demo.Repository.User;
+import com.example.demo.Repository.UserDao;
 import com.example.demo.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +18,7 @@ public class UserJpaController {
     private UserRepository userRepository;
 
     @GetMapping ("/users")
-    public List<User> retrieveAllUsers() {
+    public List<UserDao> retrieveAllUsers() {
         return userRepository.findAll(); // jpaRepo에서 상속 받는 findAll을 사용한다
     }
 }
