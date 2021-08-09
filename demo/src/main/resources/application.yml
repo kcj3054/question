@@ -1,0 +1,11 @@
+spring :
+  jpa:
+    show-sql : true
+  h2:
+    console:
+      enabled: true
+    datasource:
+      url: jdbc:h2:mem:testdb
+
+
+      #      jpa 로그가 보이도록 설정
